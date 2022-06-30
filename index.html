@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Marvel Form - JS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/379028bca9.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="first__container">
+        <div class="second__container">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="form__container">
+                <h2>Registrate</h2>
+                <h3>#Only Team Marvel Allowed</h3>
+                <form action="">
+                    <div class="input_container">
+                        <label for="name_user">Ingresa tu Nombre</label>
+                        <input type="text" id="name_user">
+                    </div>
+                    <div class="input_container">
+                        <label for="email_user">Ingresa tu email</label>
+                        <input type="text" id="email_user">
+                    </div>
+                    <div class="input_container">
+                        <label for="password_user">Establece tu contraseña</label>
+                        <input type="password" id="password_user">
+                    </div>
+                    <div class="input_container radio">
+                        <label for="">¿Heroe o Anti-heroe?</label>                            
+                        <div>
+                        <input type="radio" name="groupHeroes" id="antiheroe" value="Anti-heroe" checked>
+                        <label for="antiheroe"></label>
+                        <input type="radio" name="groupHeroes" id="heroe" value="Heroe">
+                        <label for="heroe"></label>
+                        </div>
+                    </div>
+                    <div class="btn_container">
+                        <button onclick="recolectarDatos()" type="button">Enviar</button>
+                    </div>
+                </form>
+                <div class="social__container">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

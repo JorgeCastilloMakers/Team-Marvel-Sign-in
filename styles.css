@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+html {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.first__container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/79628-avengers-hd-4k-artwork-digital-art-superheroes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.second__container{
+    background-color: #fafafa;
+    background-image: url(images/tony-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 100%;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 11px -1px rgba(0,0,0,0.6);
+    position: relative;
+}
+.second__container > i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+}
+.second__container > i:hover{
+    cursor: pointer;
+    color: #910806;
+}
+
+.form__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+}
+.form__container > h2{
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 2px;
+    font-size: clamp(30px, 3vw, 45px);
+    color: #910806;
+}
+.form__container > form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+.form__container > form > .input_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form__container > form > .radio > div {
+    display: flex;
+    gap: 20px;
+}
+.form__container > form > .radio > div > input[type=radio]{
+    display: none;    
+}
+
+.form__container > form > .radio > div > :nth-child(1)+label{
+    padding: 30px 70px;
+    background-color: black;
+    background-image: url(images/top-antiheroes-comics.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.form__container > form > .radio > div > :nth-last-child(2)+label{
+    padding: 30px 70px;
+    background-color: black;
+    background-image: url(images/heroes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.form__container > form > .radio > div > input:checked +label{
+    border: 2px solid rgb(68, 38, 116);
+    border-radius: 5px;
+}
+
+.form__container > form > .btn_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.form__container > form > .btn_container > button{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border: none;
+    background-color: #910806;
+    border-radius: 3px;
+    color: #fafafa;
+    cursor: pointer;
+
+}
+
+
+.social__container{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 2%;
+}
+.social__container > i:hover{
+    color: #910806;
+    cursor: pointer;
+}
+
+@media (max-width: 890px){
+    .second__container{
+        height: 100%;
+    }
+
+    .form__container{
+        align-items: center;
+        backdrop-filter: blur(3px);
+        background-color: #fafafae1;
+        border-radius: 10px;
+    }
+    .form__container > form{
+        align-items: center;
+    }
+    .form__container > form > .radio > div {
+        flex-direction: column;
+    }
+    .form__container > form > .btn_container{
+        justify-content: center;
+    }
+}
+@media (max-width: 687px){
+    .second__container{
+        background-position: center;
+        background-size: cover;
+        padding: unset;
+    }
+
+}
